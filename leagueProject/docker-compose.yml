@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/leagueProject:latest
+    env_file:
+      - leagueProject-env
+    ports:
+      - "7045:80"
